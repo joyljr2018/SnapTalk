@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+	<link href="css/header.css" rel="stylesheet"/>
+   <script type="text/javascript" charset="utf-8">
+      	mui.init();
+		
+		//when device setup is ready
+		mui.plusReady(function () {
+			plus.navigator.setStatusBarStyle("light");
+			plus.navigator.setStatusBarBackground("#006000");
+		    
+		})
+    </script>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav title">
+		<h1 class="mui-title title-color" ><b>SnapTalk</b></h1>
+	</header>
+	<nav class="mui-bar mui-bar-tab">
+		<a class="mui-tab-item mui-active" tabindex = "0">
+			<span class="mui-icon mui-icon-chat"></span>
+			<span class="mui-tab-label">Chat</span>
+		</a>
+		<a class="mui-tab-item" tabindex="1">
+			<span class="mui-icon mui-icon-contact" ></span>
+			<span class="mui-tab-label">Contact</span>
+		</a>
+		<a class="mui-tab-item"tabindex="2">
+			<span class="mui-icon mui-icon-paperplane" ></span>
+			<span class="mui-tab-label">Discover</span>
+		</a>
+		<a class="mui-tab-item" tabindex="3">
+			<span class="mui-icon mui-icon-person" ></span>
+			<span class="mui-tab-label">About Me</span>
+		</a>
+	</nav>
+	    <script type="text/javascript" charset="utf-8">
+	  	var CategoryArray = [
+						{
+				pageId: "rjl-chatlist.html",
+				pageUrl:"rjl-chatlist.html"
+				
+			},
+						{
+				pageId: "rjl-contactlist.html",
+				pageUrl: "rjl-contactlist.html"
+				
+			},
+			{
+				pageId: "rjl-discover.html",
+				pageUrl:"rjl-discover.html"
+				
+			},
+			{
+				pageId: "rjl-aboutme.html",
+				pageUrl:"rjl-aboutme.html"
+				
+			},
+
+
+
+		];
+		var pageStyle = {
+			top: "44px",
+			bottom: "100px"
+			
+		}
+		mui.plusReady(function() {
+			// obtain current webview object
+			var indexWebview = plus.webview.currentWebview()
+			
+			// add 4 page of webview object
+			for (var i = 0; i < CategoryArray.length; i ++) {
+				var page = plus.webview.create(CategoryArray[i].pageUrl,CategoryArray[i].pageId,pageStyle);
+				page.hide();
+				
+				// append subview to main view
+				indexWebview.append(page);
+			}
+			plus.webview.show(CategoryArray[0].pageId);
+			
+			// events handle setup 
+			mui(".mui-bar-tab").on("tap","a",function() {
+				var tabindex = this.getAttribute("tabindex");
+				plus.webview.show(CategoryArray[tabindex].pageId,"fade-in",200);
+				for (var i = 0; i > CategoryArray.length; i++) {
+					if (i != tabindex) {
+						plus.hide(CategoryArray[i].pageId,"fade-out",200);
+					}
+				}
+				
+			})
+		})
+	</script>
+</body>
+</html>
