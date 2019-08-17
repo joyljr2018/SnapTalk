@@ -1,6 +1,8 @@
 # SnapTalk
 Backend:
  Netty framework
+ Springboot
+ FastDFS file server
  
 Frontend:
  MUI
