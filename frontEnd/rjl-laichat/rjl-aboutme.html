@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<script src="js/mui.min.js"></script>
+		<link href="css/mui.min.css" rel="stylesheet"/>
+		<link href="css/header.css" rel="stylesheet"/>
+	</head>
+	<body>
+		<h1>About me</h1>
+		<div class="mui-content">
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell mui-media">
+					
+					<a id = "link_my_icon" href="javascript:;">
+						<span class ="mui-pull-right mui-icon mui-icon-arrowright" 
+						style="line-height : 42px; color:lightgray; marigin-left: 3px"></span>
+						
+						<img id = "img__my_icon"class="mui-media-object mui-pull-right" src="image/face-default-cat.png">
+						<div class="mui-media-body" style = "line-height:42 px; font-size: 16px">
+							Icon
+							
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media">
+					<a href="javascript:;">
+						<span class ="mui-pull-right mui-icon mui-icon-arrowright" 
+						style="color:lightgray; marigin-left: 3px"></span>
+						<span id ="span_nickname" class = "mui-pull-right" 
+						style = "color: gray; font-size: 14px;"></span>
+						<img class="mui-media-object mui-pull-right" src="">
+						<div class="mui-media-body">
+							Nickname
+							
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media">
+					<a href="javascript:;">
+						<span id ="span_username" class = "mui-pull-right" 
+						style = "color: gray; font-size: 14px;"></span>
+						<div class="mui-media-body">
+						    Username
+							
+						</div>
+					</a>
+				</li>
+								<li class="mui-table-view-cell mui-media">
+					<a href="javascript:;">
+						<span class ="mui-pull-right mui-icon mui-icon-arrowright" 
+						style="color:lightgray; marigin-left: 3px"></span>
+						<img class="mui-media-object mui-pull-right" src="image/qrcode.png" style="max-height: 20px; height:20px">
+						<div class="mui-media-body">
+						    QRCode
+							
+						</div>
+					</a>
+				</li>
+			</ul>
+			<br />
+			<ul class = "mui-table-view">
+				<li class="mui-table-view-cell mui-media" style = "text-align: center;">
+					<a href="javascript:;">
+						<div class = "mui-media-body">
+							Log out
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+		
+		<script src="js/mui.js"></script>
+		<script src="js/app.js"></script>
+		<script type="text/javascript">
+			mui.init();
+			mui.plusReady(function(){
+				
+				//refresh current use Info
+				var meWebview = plus.webview.currentWebview();
+				meWebview.addEventListener("show",function() {
+					refreshUserInfo();
+				});
+				var link_my_icon = document.getElementById("link_my_icon");
+				link_my_icon.addEventListener("tap",function() {
+					
+					mui.openWindow("my_icon.html","my_icon.html")
+				});
+			}) ;
+			function refreshUserInfo() {
+				var user = app.getUserGlobalInfo();
+		
+				if (user != null) {
+					var iconImage = user.iconImage;
+					var nickname = user.nickname;
+					var username = user.username;
+					
+					var span_nickname = document.getElementById("span_nickname");
+					var span_username = document.getElementById("span_username");
+					
+					span_nickname.innerHTML = nickname;
+					span_username.innerHTML = username;
+					
+					if (app.isNotNull(iconImage) ) {
+						var img_my_icon = document.getElementById("img_my_icon");
+						img_my_icon.src = app.imgServerUrl+ iconImage;
+					}
+					
+				} 
+				
+			}
+		</script>
+	</body>
+</html>

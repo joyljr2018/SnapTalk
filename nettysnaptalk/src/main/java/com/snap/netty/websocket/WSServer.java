@@ -18,9 +18,12 @@ public class WSServer {
             server.group(mainGroup,subGroup).channel(NioServerSocketChannel.class)
                     .childHandler(new WSServerInitializer());
 
-            ChannelFuture future = server.bind(8088).sync();
+            ChannelFuture future = server.bind(8080).sync();
+           // System.out.println(future.channel().remoteAddress());
             System.out.println(future.channel().remoteAddress());
             future.channel().closeFuture().sync();
+
+           // System.out.println(future.channel().localAddress());
         } catch (InterruptedException e) {
             e.printStackTrace();
         } finally {

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+
+    <context id="MysqlContext" targetRuntime="MyBatis3Simple" defaultModelType="flat">
+        <property name="beginningDelimiter" value="'"/>
+        <property name="endingDelimiter" value="'"/>
+        <plugin type="tk.mybatis.mapper.generator.MapperPlugin">
+            <property name="mappers" value="com.snap.netty.utils.MyMapper"/>
+        </plugin>
+        <jdbcConnection driverClass="com.mysql.cj.jdbc.Driver"
+                        connectionURL="jdbc:mysql://127.0.0.1:3306/snaptalk?serverTimezone=UTC"
+                        userId="root"
+                        password="7792347a">
+        </jdbcConnection>
+        <!-- pojo -->
+        <javaModelGenerator targetPackage="com.snap.netty.pojo" targetProject="nettysnaptalk/src/main/java"></javaModelGenerator>
+        <!-- mapper -->
+        <sqlMapGenerator targetPackage="mapper" targetProject="nettysnaptalk/src/main/resources"></sqlMapGenerator>
+        <!-- mapper reflection-->
+
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.snap.netty.mapper" targetProject="nettysnaptalk/src/main/java"></javaClientGenerator>
+        <table tableName="users"></table>
+        <table tableName="friends_list"></table>
+        <table tableName="friends_request"></table>
+        <table tableName="chat_msg"></table>
+    </context>
+</generatorConfiguration>

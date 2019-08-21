@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/header.css" />
+
+	</head>
+
+	<body>
+
+		<header class="mui-bar mui-bar-nav title">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" style="color: white;"></a>
+			<a id="openMenu" class="mui-icon mui-icon-right-nav mui-pull-right" style="color: white;">…</a>
+			<h1 class="mui-title title-color">Profile Picture</h1>
+		</header>
+
+		<div class="mui-content">
+			<img id="img_my_icon" src="image/face-default-cat.png" />
+		</div>
+		
+		<div id="sheet-profile" class="mui-popover mui-popover-bottom mui-popover-action ">
+		    <!-- selection menu -->
+		    <ul class="mui-table-view">
+		      <li class="mui-table-view-cell">
+		        <a id="link_choosePhoto" href="#">Select picture</a>
+		      </li>
+		      <li class="mui-table-view-cell">
+		        <a id="link_savePhoto" href="#">Download picture</a>
+		      </li>
+		    </ul>
+		    <!-- Cancel Menu -->
+		    <ul class="mui-table-view">
+		      <li class="mui-table-view-cell">
+		        <a href="#sheet-profile"><b>Cancel</b></a>
+		      </li>
+		    </ul>
+		</div>
+		
+
+		<script src="js/mui.min.js"></script>
+		<script src="js/app.js"></script>
+		<script type="text/javascript">
+			mui.init()
+
+			mui.plusReady(function() {
+
+				refreshFace();
+				
+				// Refresh profile picture
+				window.addEventListener("refresh", function(){
+					refreshFace();
+				});
+
+				// Obatin current width of the screen
+				var imgWidth = document.body.clientWidth;
+				img_my_icon.width = imgWidth;
+				img_my_icon.height = imgWidth;
+
+				// bdin selection menu
+				var openMenu = document.getElementById("openMenu");
+				openMenu.addEventListener("tap", function() {
+					mui("#sheet-profile").popover("toggle");
+				});
+				
+				
+				// Select picture event
+				var link_choosePhoto = document.getElementById("link_choosePhoto");
+				link_choosePhoto.addEventListener("tap", function() {
+					mui.openWindow({
+						url: "plugin/v3.1.6/myface-uploader.html",
+						id:"myface-uploader.html",
+						createNew: true});
+					mui("#sheet-myface").popover("toggle");
+				});
+				 
+				// Save Picture
+				var link_savePhoto = document.getElementById("link_savePhoto");
+				link_savePhoto.addEventListener("tap", function() {
+					
+					plus.nativeUI.showWaiting("Downloading...");
+					
+					var user = app.getUserGlobalInfo();
+					var faceImage = user.faceImageBig;
+					
+					var dtast = plus.downloader.createDownload(
+						app.imgServerUrl + faceImage,
+						{},
+						function(downloadFile, status) {
+							
+							plus.nativeUI.closeWaiting();
+							
+							if (status == 200) {
+								var tempFile = downloadFile.filename;
+								
+								// use plus saving api to save the picture
+								plus.gallery.save(tempFile, function() {
+									app.showToast("Picture Saved！", "success");
+								})
+								
+							} else {
+								app.showToast("Download error...", "error");
+								console.log("Download Error...");
+							}
+							
+						}
+					);
+					dtast.start();	// start downlad
+					
+				});
+			});
+			
+			function refreshFace() {
+				var user = app.getUserGlobalInfo();
+				var img_my_face = document.getElementById("img_my_icon");
+
+				if(user != null) {
+					var faceImage = user.faceImageBig;
+					if(app.isNotNull(faceImage)) {
+						img_my_face.src = app.imgServerUrl + faceImage;
+					}
+				}
+			}
+		</script>
+
+	</body>
+
+</html>
