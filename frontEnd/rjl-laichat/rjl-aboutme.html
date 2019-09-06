@@ -18,15 +18,14 @@
 						<span class ="mui-pull-right mui-icon mui-icon-arrowright" 
 						style="line-height : 42px; color:lightgray; marigin-left: 3px"></span>
 						
-						<img id = "img__my_icon"class="mui-media-object mui-pull-right" src="image/face-default-cat.png">
+						<img id = "img_my_icon"class="mui-media-object mui-pull-right" src="image/face-default-cat.png">
 						<div class="mui-media-body" style = "line-height:42 px; font-size: 16px">
 							Icon
-							
 						</div>
 					</a>
 				</li>
 				<li class="mui-table-view-cell mui-media">
-					<a href="javascript:;">
+					<a id = "link_nickname" href="javascript:;">
 						<span class ="mui-pull-right mui-icon mui-icon-arrowright" 
 						style="color:lightgray; marigin-left: 3px"></span>
 						<span id ="span_nickname" class = "mui-pull-right" 
@@ -49,7 +48,7 @@
 					</a>
 				</li>
 								<li class="mui-table-view-cell mui-media">
-					<a href="javascript:;">
+					<a id = "link_my_qrcode" href="javascript:;">
 						<span class ="mui-pull-right mui-icon mui-icon-arrowright" 
 						style="color:lightgray; marigin-left: 3px"></span>
 						<img class="mui-media-object mui-pull-right" src="image/qrcode.png" style="max-height: 20px; height:20px">
@@ -63,7 +62,7 @@
 			<br />
 			<ul class = "mui-table-view">
 				<li class="mui-table-view-cell mui-media" style = "text-align: center;">
-					<a href="javascript:;">
+					<a id = "link_logout" href="javascript:;">
 						<div class = "mui-media-body">
 							Log out
 						</div>
@@ -83,11 +82,39 @@
 				meWebview.addEventListener("show",function() {
 					refreshUserInfo();
 				});
+				
+				
 				var link_my_icon = document.getElementById("link_my_icon");
 				link_my_icon.addEventListener("tap",function() {
 					
 					mui.openWindow("my_icon.html","my_icon.html")
 				});
+				
+				var link_nickname = document.getElementById("link_nickname");
+				link_nickname.addEventListener("tap", function() {
+					mui.openWindow("my_nickname.html", "my_nickname.html");
+				});
+				
+				var link_my_qrcode = document.getElementById("link_my_qrcode");
+				link_my_qrcode.addEventListener("tap", function(){
+					mui.openWindow({
+						url: "my_QRCode.html", 
+						id: "my_QRCode.html", 
+						styles: {}
+					})
+				});
+				// logout function
+				var link_logout = document.getElementById("link_logout");
+				link_logout.addEventListener("tap", function() {
+					app.userLogout();
+					mui.openWindow("login.html", "login");
+				});
+				
+				
+				// define refresh icon function
+				window.addEventListener("refresh",function(){
+					refreshUserInfo();
+				})
 			}) ;
 			function refreshUserInfo() {
 				var user = app.getUserGlobalInfo();

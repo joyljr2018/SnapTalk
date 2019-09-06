@@ -3,7 +3,7 @@ window.app = {
 	/**
 	 * image server url
 	 */ 
-	imgServerUrl: '',
+	imgServerUrl: 'http://192.168.1.19:88/rjl/',
 	//back end server address
 	serverUrl: 'http://192.168.1.9:8080',
 	/**
@@ -42,5 +42,9 @@ window.app = {
 		
 		var userInfoStr = plus.storage.getItem("userInfo");
 		return JSON.parse(userInfoStr);
-	}
+	},
+	
+	userLogout: function() {
+		plus.storage.removeItem("userInfo");
+	},
 }

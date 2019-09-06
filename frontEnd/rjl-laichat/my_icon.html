@@ -71,8 +71,8 @@
 				var link_choosePhoto = document.getElementById("link_choosePhoto");
 				link_choosePhoto.addEventListener("tap", function() {
 					mui.openWindow({
-						url: "plugin/v3.1.6/myface-uploader.html",
-						id:"myface-uploader.html",
+						url: "plugin/v3.1.6/myIcon-uploader.html",
+						id:"myIcon-uploader.html",
 						createNew: true});
 					mui("#sheet-myface").popover("toggle");
 				});
@@ -84,10 +84,10 @@
 					plus.nativeUI.showWaiting("Downloading...");
 					
 					var user = app.getUserGlobalInfo();
-					var faceImage = user.faceImageBig;
+					var iconImage = user.iconImageBig;
 					
 					var dtast = plus.downloader.createDownload(
-						app.imgServerUrl + faceImage,
+						app.imgServerUrl + iconImage,
 						{},
 						function(downloadFile, status) {
 							
@@ -96,7 +96,7 @@
 							if (status == 200) {
 								var tempFile = downloadFile.filename;
 								
-								// use plus saving api to save the picture
+								// use plus‘ saving api to save the picture
 								plus.gallery.save(tempFile, function() {
 									app.showToast("Picture Saved！", "success");
 								})
@@ -118,9 +118,9 @@
 				var img_my_face = document.getElementById("img_my_icon");
 
 				if(user != null) {
-					var faceImage = user.faceImageBig;
-					if(app.isNotNull(faceImage)) {
-						img_my_face.src = app.imgServerUrl + faceImage;
+					var iconImage = user.iconImageBig;
+					if(app.isNotNull(iconImage)) {
+						img_my_face.src = app.imgServerUrl + iconImage;
 					}
 				}
 			}

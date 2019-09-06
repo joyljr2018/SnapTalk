@@ -58,9 +58,9 @@
 			mui.plusReady(function() {
 				
 				var user = app.getUserGlobalInfo();
-				var faceImage = user.faceImageBig;
+				var iconImage = user.iconImageBig;
 				// 获取屏幕宽度，设置图片
-				$image.attr('src', app.imgServerUrl + faceImage);
+				$image.attr('src', app.imgServerUrl + iconImage);
 				
 				/** ======================== 从相册选择图片 ======================== **/
 					// 从相册中选择图片
@@ -84,11 +84,11 @@
 					var result = $image.cropper("getCroppedCanvas");
 					if(result) {
 						var base64Url = result.toDataURL();
-						
+						console.log("upload")
 						// 上传头像
 						var user = app.getUserGlobalInfo();
 						// 与后端联调
-						mui.ajax(app.serverUrl + "/u/uploadFaceBase64",{
+						mui.ajax(app.serverUrl + "/user/uploadIconBase64",{
 							data:{
 								userId:user.id,
 								faceData:base64Url
@@ -105,14 +105,14 @@
 								if (data.status == 200) {
 									var userInfo = data.data;
 									app.setUserGlobalInfo(userInfo);
-									
-									// 触发另外一个webview的自定义事件，可以使用 mui.fire()
-									var imooc_meWebview = plus.webview.getWebviewById("imooc-me.html");
+									console.log("we are here");
+									// refresh the mini icon
+									var imooc_meWebview = plus.webview.getWebviewById("rjl-aboutme.html");
 									mui.fire(imooc_meWebview, "refresh");
 									
-									// 触发另外一个webview的自定义事件，可以使用 mui.fire()
-									var myfaceWebview = plus.webview.getWebviewById("myface.html");
-									mui.fire(myfaceWebview, "refresh");
+									// refresh big picture
+									var imooc_meWebview = plus.webview.getWebviewById("my_icon.html");
+									mui.fire(imooc_meWebview, "refresh");
 									
 									// 页面跳转
 									mui.openWindow("index.html", "index.html");

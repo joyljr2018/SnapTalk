@@ -4,7 +4,6 @@ public class UsersBO {
     private String userId;
     private String IconData;
     private String nickname;
-    
 	public String getUserId() {
 		return userId;
 	}

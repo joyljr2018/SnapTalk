@@ -116,5 +116,11 @@
             <scope>compile</scope>
         </dependency>
 
+        <!-- QR Code -->
+        <dependency>
+            <groupId>com.google.zxing</groupId>
+            <artifactId>javase</artifactId>
+            <version>3.3.3</version>
+        </dependency>
     </dependencies>
 </project>

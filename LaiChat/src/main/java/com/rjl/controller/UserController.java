@@ -17,7 +17,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
-import tk.mybatis.mapper.entity.Example;
 
 @RestController
 @RequestMapping("user")
@@ -67,6 +66,7 @@ public class UserController {
     @PostMapping("/uploadIconBase64")
     public JSONResult uploadIconBase64(@RequestBody UsersBO userBo) throws Exception {
 
+        System.err.println("uploadIconBase64");
         //obtain the base64 string from frontend then convert to file then upload
         String base64Data = userBo.getIconData();
         String userIconPath = "C:\\" + userBo.getUserId() + "userIcon64.png";
@@ -87,10 +87,23 @@ public class UserController {
         user.setId(userBo.getUserId());
         user.setIconImage(thumpImgUrl);
         user.setIconImageBig(url);
-        userService.updateUserInfo(user);
 
-        return JSONResult.ok(user);
+        Users result = userService.updateUserInfo(user);
+
+        return JSONResult.ok(result);
     }
 
+    @PostMapping("/setNickname")
+    public JSONResult setNickname(@RequestBody UsersBO userBo) throws Exception {
 
+        Users user = new Users();
+        user.setId(userBo.getUserId());
+        user.setNickname(userBo.getNickname());
+
+
+        Users result = userService.updateUserInfo(user);
+
+        return JSONResult.ok(result);
+
+    }
 }

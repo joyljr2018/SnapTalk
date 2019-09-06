@@ -4,11 +4,17 @@ import com.rjl.org.n3r.idworker.Sid;
 import com.rjl.service.UserService;
 import com.rjl.mapper.UsersMapper;
 import com.rjl.pojo.Users;
+import com.rjl.utils.FastDFSClient;
+import com.rjl.utils.FileUtils;
+import com.rjl.utils.QRCodeUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.web.multipart.MultipartFile;
 import tk.mybatis.mapper.entity.Example;
+
+import java.io.IOException;
 
 @Service
 public class UserServiceImpl implements UserService {
@@ -19,6 +25,14 @@ public class UserServiceImpl implements UserService {
     @Autowired
     private Sid sid;
 
+    @Autowired
+    private QRCodeUtils qrCodeUtils;
+
+    @Autowired
+    private FileUtils fileUtils;
+
+    @Autowired
+    private FastDFSClient fastDFSClient;
     @Override
     public boolean queryUsernameIsExist(String username) {
         Users user = new Users();
@@ -43,8 +57,22 @@ public class UserServiceImpl implements UserService {
     @Override
     @Transactional(propagation = Propagation.REQUIRED)
     public Users saveUser(Users user) {
-       // user.setQrcode("");
         String userId = sid.nextShort();
+        // make a unique QR Code for every user
+
+        String qrCodePath = "//Users/RJ/Desktop" + userId + "qrcode.png";
+        // laichat_qrcode:[username]
+        qrCodeUtils.createQRCode(qrCodePath,"laichat_qrcode:" + user.getUsername());
+        MultipartFile qrCodeFile = fileUtils.fileToMultipart(qrCodePath);
+
+        String qrCodeUrl ="";
+        try {
+            qrCodeUrl = fastDFSClient.uploadQRCode(qrCodeFile);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        user.setQrcode(qrCodeUrl);
+
         user.setId(userId);
         usersMapper.insert(user);
         return user;
