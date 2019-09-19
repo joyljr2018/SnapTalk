@@ -1,6 +1,7 @@
 package com.rjl.controller;
 
 
+import com.rjl.enums.SearchFriendStatusEnum;
 import com.rjl.pojo.Users;
 import com.rjl.pojo.bo.UsersBO;
 import com.rjl.pojo.vo.UsersVo;
@@ -106,4 +107,59 @@ public class UserController {
         return JSONResult.ok(result);
 
     }
+    /**
+     * @Description: 发送添加好友的请求
+     */
+    @PostMapping("/addFriendRequest")
+    public JSONResult addFriendRequest(String myUserId, String friendUsername)
+            throws Exception {
+
+        // 0. 判断 myUserId friendUsername 不能为空
+        if (StringUtils.isBlank(myUserId)
+                || StringUtils.isBlank(friendUsername)) {
+            return JSONResult.errorMsg("");
+        }
+
+
+        // precondition - 1. if user doenst exist, return user DNE
+        // precondition - 2. if user is yuorself, return you cant add yourself
+        // precondition - 3. if user is in your friends, return user is already your friend.
+        Integer status = userService.preconditionSearchFriends(myUserId, friendUsername);
+        if (status == SearchFriendStatusEnum.SUCCESS.status) {
+            userService.sendFriendRequest(myUserId, friendUsername);
+        } else {
+            String errorMsg = SearchFriendStatusEnum.getMsgByKey(status);
+            return JSONResult.errorMsg(errorMsg);
+        }
+
+        return JSONResult.ok();
+    }
+    /**
+     * @Description" search friend api
+     */
+    @PostMapping("/search")
+    public JSONResult searchUser(String myUserId, String friendUsername)
+            throws Exception {
+
+        // 0. 判断 myUserId friendUsername 不能为空
+        if (StringUtils.isBlank(myUserId)
+                || StringUtils.isBlank(friendUsername)) {
+            return JSONResult.errorMsg("");
+        }
+
+        // precondition - 1. if user doenst exist, return user DNE
+        // precondition - 2. if user is yuorself, return you cant add yourself
+        // precondition - 3. if user is in your friends, return user is already your friend.
+        Integer status = userService.preconditionSearchFriends(myUserId, friendUsername);
+        if (status == SearchFriendStatusEnum.SUCCESS.status) {
+            Users user = userService.queryUserInfoByUsername(friendUsername);
+            UsersVo userVO = new UsersVo();
+            BeanUtils.copyProperties(user, userVO);
+            return JSONResult.ok(userVO);
+        } else {
+            String errorMsg = SearchFriendStatusEnum.getMsgByKey(status);
+            return JSONResult.errorMsg(errorMsg);
+        }
+    }
+
 }

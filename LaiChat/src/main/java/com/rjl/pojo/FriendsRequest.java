@@ -14,7 +14,7 @@ public class FriendsRequest {
     private String requestUserId;
 
     @Column(name = "accept_user_id")
-    private Integer acceptUserId;
+    private String acceptUserId;
 
     @Column(name = "requst_date_time")
     private Date requstDateTime;
@@ -50,14 +50,14 @@ public class FriendsRequest {
     /**
      * @return accept_user_id
      */
-    public Integer getAcceptUserId() {
+    public String getAcceptUserId() {
         return acceptUserId;
     }
 
     /**
      * @param acceptUserId
      */
-    public void setAcceptUserId(Integer acceptUserId) {
+    public void setAcceptUserId(String acceptUserId) {
         this.acceptUserId = acceptUserId;
     }
 

@@ -2,28 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f8fb892-dd7a-456f-a3be-8f84742f0bdd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rjl/utils/QRCodeUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/rjl/enums/SearchFriendStatusEnum.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rjl/FastdfsImporter.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/rjl/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rjl/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rjl/pojo/bo/UsersBo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rjl/pojo/bo/UsersBo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rjl/mapper/FriendsListMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rjl/mapper/FriendsListMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rjl/mapper/FriendsRequestMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rjl/mapper/FriendsRequestMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rjl/pojo/FriendsRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rjl/pojo/FriendsRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rjl/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rjl/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/rjl/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rjl/service/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rjl/utils/FastDFSClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rjl/utils/FastDFSClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/rjl/FastdfsImporter$ComponetImport.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/rjl/FastdfsImporter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/rjl/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/rjl/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/rjl/pojo/bo/UsersBO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/rjl/pojo/bo/UsersBO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/rjl/utils/FastDFSClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/rjl/utils/FastDFSClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontEnd/rjl-laichat/image/error.png" beforeDir="false" afterPath="$PROJECT_DIR$/../frontEnd/rjl-laichat/image/error.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontEnd/rjl-laichat/image/success.png" beforeDir="false" afterPath="$PROJECT_DIR$/../frontEnd/rjl-laichat/image/success.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontEnd/rjl-laichat/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontEnd/rjl-laichat/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontEnd/rjl-laichat/my_icon.1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontEnd/rjl-laichat/my_icon.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontEnd/rjl-laichat/my_icon.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontEnd/rjl-laichat/plugin/v3.1.6/myIcon-uploader.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontEnd/rjl-laichat/plugin/v3.1.6/myIcon-uploader.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontEnd/rjl-laichat/rjl-aboutme.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontEnd/rjl-laichat/rjl-aboutme.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontEnd/rjl-laichat/rjl-discover.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontEnd/rjl-laichat/rjl-discover.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -38,23 +26,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/rjl/service/UserServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="122" column="26" selection-start-line="122" selection-start-column="26" selection-end-line="122" selection-end-column="26" />
+            <state relative-caret-position="280">
+              <caret line="148" column="33" selection-start-line="148" selection-start-column="33" selection-end-line="148" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/rjl/utils/QRCodeUtils.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/rjl/pojo/FriendsList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="30" selection-start-line="30" selection-end-line="30" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="75">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -62,17 +50,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/rjl/pojo/Users.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
+            <state relative-caret-position="450">
               <caret line="38" column="28" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/rjl/service/UserServiceImpl.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/rjl/mapper/UsersMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="62" column="47" selection-start-line="62" selection-start-column="47" selection-end-line="62" selection-end-column="47" />
+            <state relative-caret-position="105">
+              <caret line="7" column="49" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -81,10 +69,50 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/rjl/mapper/FriendsListMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="51" column="34" selection-start-line="51" selection-start-column="34" selection-end-line="51" selection-end-column="34" />
+            <state relative-caret-position="90">
+              <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/rjl/mapper/FriendsRequestMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/rjl/pojo/FriendsRequest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="460">
+              <caret line="64" column="31" lean-forward="true" selection-start-line="64" selection-start-column="31" selection-end-line="64" selection-end-column="31" />
+              <folding>
+                <element signature="e#997#998#0" expanded="true" />
+                <element signature="e#1032#1033#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/rjl/service/UserService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="505">
+              <caret line="41" column="58" selection-start-line="41" selection-start-column="58" selection-end-line="41" selection-end-column="58" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -92,8 +120,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/rjl/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="58" selection-start-line="58" selection-end-line="58" />
+            <state relative-caret-position="220">
+              <caret line="125" column="92" selection-start-line="125" selection-start-column="92" selection-end-line="125" selection-end-column="92" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -101,49 +129,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/rjl/pojo/vo/UsersVo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-9">
-              <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-              <folding>
-                <element signature="e#198#199#0" expanded="true" />
-                <element signature="e#229#230#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/rjl/utils/JSONResult.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/rjl/enums/SearchFriendStatusEnum.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="344">
-              <caret line="109" selection-start-line="109" selection-end-line="109" />
-              <folding>
-                <element signature="e#1747#1748#0" expanded="true" />
-                <element signature="e#1773#1774#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/rjl/pojo/bo/UsersBO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/rjl/utils/FastDFSClient.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="48" selection-start-line="48" selection-end-line="48" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="120">
+              <caret line="8" column="51" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -190,8 +180,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/rjl/org/n3r/idworker/Id.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/rjl/org/n3r/idworker/Sid.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/rjl/mapper/ChatMsgMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/rjl/mapper/FriendsListMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/rjl/mapper/FriendsRequestMapper.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/UsersMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/rjl/utils/MyMapper.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/rjl/service/UserServiceImplTest.java" />
@@ -202,19 +190,25 @@
         <option value="$PROJECT_DIR$/src/main/java/com/rjl/utils/FileUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/rjl/FastdfsImporter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/rjl/pojo/bo/UsersBo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/rjl/service/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/rjl/utils/FastDFSClient.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/rjl/pojo/bo/UsersBO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/rjl/controller/UserController.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/rjl/utils/QRCodeUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/rjl/enums/SearchFriendSttusEnum.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/rjl/enums/SearchFriendStatusEnum.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/rjl/mapper/FriendsListMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/rjl/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/rjl/service/UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/rjl/mapper/FriendsRequestMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/rjl/pojo/FriendsRequest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/rjl/service/UserServiceImpl.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="y" value="23" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-20" />
+    <option name="y" value="160" />
     <option name="width" value="1440" />
     <option name="height" value="809" />
   </component>
@@ -224,7 +218,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -265,7 +258,25 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="rjl" type="462c0819:PsiDirectoryNode" />
-              <item name="pojo" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rjllaichatnetty" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LaiChat" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="rjl" type="462c0819:PsiDirectoryNode" />
+              <item name="enums" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rjllaichatnetty" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LaiChat" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="rjl" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="rjllaichatnetty" type="b2602c69:ProjectViewProjectNode" />
@@ -275,17 +286,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="rjl" type="462c0819:PsiDirectoryNode" />
               <item name="pojo" type="462c0819:PsiDirectoryNode" />
-              <item name="bo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rjllaichatnetty" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LaiChat" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="rjl" type="462c0819:PsiDirectoryNode" />
-              <item name="pojo" type="462c0819:PsiDirectoryNode" />
-              <item name="vo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="rjllaichatnetty" type="b2602c69:ProjectViewProjectNode" />
@@ -295,15 +295,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="rjl" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rjllaichatnetty" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LaiChat" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="rjl" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="rjllaichatnetty" type="b2602c69:ProjectViewProjectNode" />
@@ -321,6 +312,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -437,7 +429,10 @@
       <workItem from="1565746257039" duration="5188000" />
       <workItem from="1565810214250" duration="7823000" />
       <workItem from="1565829766654" duration="10494000" />
-      <workItem from="1565915615268" duration="35952000" />
+      <workItem from="1565915615268" duration="36055000" />
+      <workItem from="1568398169663" duration="1422000" />
+      <workItem from="1568855772058" duration="3329000" />
+      <workItem from="1568859433811" duration="673000" />
     </task>
     <servers />
   </component>
@@ -474,13 +469,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59457000" />
+    <option name="totallyTimeSpent" value="64984000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="809" extended-state="1" />
+    <frame x="-20" y="160" width="1440" height="809" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26037195" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -490,7 +485,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32914925" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32914925" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39888424" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -531,17 +526,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.0.7.RELEASE/spring-aop-5.0.7.RELEASE.jar!/org/springframework/aop/framework/AdvisedSupport.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="354" selection-start-line="354" selection-end-line="354" />
-          <folding>
-            <element signature="e#2897#2898#0" expanded="true" />
-            <element signature="e#2936#2937#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/tk/mybatis/mapper-base/1.1.5/mapper-base-1.1.5.jar!/tk/mybatis/mapper/common/base/insert/InsertMapper.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -567,26 +551,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rjl/mapper/ChatMsgMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rjl/mapper/FriendsListMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rjl/mapper/FriendsRequestMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
@@ -681,20 +645,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rjl/pojo/FriendsRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rjl/pojo/FriendsList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rjl/pojo/ChatMsg.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -762,16 +712,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rjl/mapper/UsersMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="49" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rjl/utils/JsonUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -783,16 +723,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="298">
           <caret line="106" column="63" selection-start-line="106" selection-start-column="46" selection-end-line="106" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rjl/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -817,16 +747,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rjl/FastdfsImporter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rjl/FastdfsImporter.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-pool2/2.5.0/commons-pool2-2.5.0.jar!/org/apache/commons/pool2/impl/GenericKeyedObjectPool.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -854,41 +775,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rjl/pojo/Users.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="38" column="28" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rjl/utils/JSONResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="109" selection-start-line="109" selection-end-line="109" />
-          <folding>
-            <element signature="e#1747#1748#0" expanded="true" />
-            <element signature="e#1773#1774#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="51" column="34" selection-start-line="51" selection-start-column="34" selection-end-line="51" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
+        <state relative-caret-position="1830">
           <caret line="122" column="26" selection-start-line="122" selection-start-column="26" selection-end-line="122" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rjl/utils/QRCodeUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
+        <state relative-caret-position="165">
           <caret line="30" selection-start-line="30" selection-end-line="30" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -896,32 +792,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rjl/controller/UserController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="58" selection-start-line="58" selection-end-line="58" />
+        <state relative-caret-position="765">
+          <caret line="51" column="34" selection-start-line="51" selection-start-column="34" selection-end-line="51" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rjl/pojo/vo/UsersVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#198#199#0" expanded="true" />
+            <element signature="e#229#230#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rjl/utils/FastDFSClient.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rjl/utils/JSONResult.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        <state relative-caret-position="1185">
+          <caret line="109" selection-start-line="109" selection-end-line="109" />
           <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rjl/service/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="62" column="47" selection-start-line="62" selection-start-column="47" selection-end-line="62" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1747#1748#0" expanded="true" />
+            <element signature="e#1773#1774#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -933,13 +828,104 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rjl/pojo/vo/UsersVo.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rjl/utils/FastDFSClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-9">
-          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+        <state relative-caret-position="540">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
           <folding>
-            <element signature="e#198#199#0" expanded="true" />
-            <element signature="e#229#230#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rjl/pojo/FriendsList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rjl/pojo/Users.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="38" column="28" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rjl/mapper/UsersMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="49" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rjl/mapper/FriendsListMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rjl/enums/SearchFriendStatusEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="51" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rjl/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="125" column="92" selection-start-line="125" selection-start-column="92" selection-end-line="125" selection-end-column="92" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rjl/mapper/FriendsRequestMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rjl/pojo/FriendsRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="64" column="31" lean-forward="true" selection-start-line="64" selection-start-column="31" selection-end-line="64" selection-end-column="31" />
+          <folding>
+            <element signature="e#997#998#0" expanded="true" />
+            <element signature="e#1032#1033#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rjl/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="505">
+          <caret line="41" column="58" selection-start-line="41" selection-start-column="58" selection-end-line="41" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rjl/service/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="148" column="33" selection-start-line="148" selection-start-column="33" selection-end-line="148" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
